@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+        padding: 20px;
+        position: fixed; /* Fixa o header no topo */
+        top: 0; /* Ajusta a posição superior para 0 */
+        width: 100%; /* Define a largura do header como 100% da tela */
+        z-index: 100;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+img {
+padding: 50vh;
+  width: 50%;
+  object-fit: cover;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+position: relative;
+position:absolute;
+top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
