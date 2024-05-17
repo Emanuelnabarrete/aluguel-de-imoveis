@@ -1,45 +1,47 @@
 
-body{
-    background-color: #dab348;
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #D2A93F;
     margin: 0;
     padding: 0;
-}
-
-header{
     display: flex;
-    justify-content: flex-end;
-}
-
-header img {
-    width: 3px;
-    margin: 1px;
-}
-
-.containerCadastro{
-    display: flex;
+    align-items: center;
     justify-content: center;
-}
+    height: 100vh;
+  }
 
-.formCadastro{
-    width: 50%;
-    text-align: center;
-    border: 5px solid #eeeeee;
+
+  .containerCadastro {
+    background-color: #D2A93F;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+
+  input {
+    margin-bottom: 10px;
+    padding: 8px;
+  }
+
+  button {
+    background-color: #FEEF9B;
+    color: black;
+    padding: 10px;
+    border: none;
     border-radius: 5px;
-}
+    cursor: pointer;
+  }
 
-label{
-    display: block;
-    margin-top: 10px;
-}
-
-input, button{
-    height: 5vh;
-    width: 40vh;
-}
-
-button{
-    display: block;
-        margin-top: 28px;
-        margin-left: auto;
-        margin-right: auto;
-}
+  button:hover {
+    background-color: #0056b3;
+  }

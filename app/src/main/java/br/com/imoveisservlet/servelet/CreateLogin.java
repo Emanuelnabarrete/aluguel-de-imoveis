@@ -14,8 +14,6 @@ import java.io.IOException;
 @WebServlet("/login")
 public class CreateLogin extends HttpServlet{
 
-
-
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         processRequest(req, resp);
@@ -24,7 +22,7 @@ public class CreateLogin extends HttpServlet{
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("Login.html").forward(req, resp);
+        req.getRequestDispatcher("Login.jsp").forward(req, resp);
 
         processRequest(req, resp);
     }
@@ -38,15 +36,12 @@ public class CreateLogin extends HttpServlet{
 
         LoginDao loginDao = new LoginDao();
 
-
-
-
         boolean acesso = loginDao.loginUser(login);
 
         if (acesso) {
             System.out.println("Login bem-sucedido para o usuário: " + email);
 
-            resp.sendRedirect(req.getContextPath() +"/cadastroImovel");
+            resp.sendRedirect(req.getContextPath() +"/HomeLogada");
 
 
         } else {

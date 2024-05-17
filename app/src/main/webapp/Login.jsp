@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./Styles/Login/login.css">
     <link rel="stylesheet" href="./Styles/footer.css">
 
-    <title>ADIMO - Login</title>
+    <title> RealState </title>
 </head>
 <body>
 
@@ -17,7 +17,7 @@
 
     <div class="content-box">
         <div class="form-box">
-            <h2>RealStateSale</h2>
+            <h2>RealState</h2>
             <form action="login" method="post">
                 <div class="input-box">
                     <span>Email:</span>
@@ -37,7 +37,7 @@
                     <label>
                         <input type="checkbox"/> Lembrar de mim
                     </label>
-                    <a href="/teste">Esqueceu a senha?</a>
+                    <a href="/cadastrouser">Esqueceu a senha?</a>
                 </div>
 
                 <div class="input-button">
@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="input-box">
-                    <p>Não Tem Uma Conta? <a href="./cadastro.html">Criar</a></p>
+                    <p>Não Tem Uma Conta? <a href="/cadastrouser">Criar</a></p>
                 </div>
             </form>
         </div>
