@@ -16,7 +16,8 @@ Esse projeto esta sendo feito para Projeto Integrador do terceiro semestre de TA
 
 ## Modelo Conceitual - MER
 
-![image](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/118950513/340df3eb-1c1b-4418-8360-98c03c44b5c6)
+![Conceptual model - BRMW_page-0001](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/157494127/cf56fa2d-7b00-4a59-ba62-d06c852fa730)
+
 
 ## Prototipos do site - 
 
