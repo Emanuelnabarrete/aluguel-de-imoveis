@@ -10,6 +10,7 @@ public class CadastroImovel {
     private String valorNoite;
     private String imagens;
     private String obs;
+    private String idUser;
 
     private String email;
 
@@ -20,7 +21,7 @@ public class CadastroImovel {
 
     }
 
-    public CadastroImovel(String tituloImovel, String endereco, String numQuartos, String numBanheiro, String numVagas, String valorNoite, String imagens, String obs , String email, String telefone) {
+    public CadastroImovel(String tituloImovel, String endereco, String numQuartos, String numBanheiro, String numVagas, String valorNoite, String imagens, String obs, String idUser, String email, String telefone) {
         this.tituloImovel = tituloImovel;
         this.endereco = endereco;
         this.numQuartos = numQuartos;
@@ -29,11 +30,12 @@ public class CadastroImovel {
         this.valorNoite = valorNoite;
         this.imagens = imagens;
         this.obs = obs;
+        this.idUser = idUser;
         this.email = email;
         this.telefone = telefone;
     }
 
-    public CadastroImovel(String idCadastroImovel, String tituloImovel, String endereco, String numQuartos, String numBanheiro, String numVagas, String valorNoite, String imagens, String obs, String email, String telefone) {
+    public CadastroImovel(String idCadastroImovel, String tituloImovel, String endereco, String numQuartos, String numBanheiro, String numVagas, String valorNoite, String imagens, String obs, String idUser, String email, String telefone) {
         this.idCadastroImovel = idCadastroImovel;
         this.tituloImovel = tituloImovel;
         this.endereco = endereco;
@@ -43,6 +45,7 @@ public class CadastroImovel {
         this.valorNoite = valorNoite;
         this.imagens = imagens;
         this.obs = obs;
+        this.idUser = idUser;
         this.email = email;
         this.telefone = telefone;
     }
@@ -90,4 +93,9 @@ public class CadastroImovel {
     public String getIdCadastroImovel() {
         return idCadastroImovel;
     }
+
+    public String getIdUser() {
+        return idUser;
+    }
 }
+

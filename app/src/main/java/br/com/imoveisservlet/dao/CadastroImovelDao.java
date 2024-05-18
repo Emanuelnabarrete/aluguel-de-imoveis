@@ -11,7 +11,7 @@ public class CadastroImovelDao {
 
     public void createImovel(CadastroImovel imovel) {
 
-        String SQL = "INSERT INTO CADASTRO_IMOVEL(TITULO_IMOVEL, ENDERECO,NUM_QUARTOS, NUM_BANHEIROS, NUM_VAGAS, VALOR_NOITE, IMAGENS, OBS, email, telefone ) VALUES (?,?,?,?,?,?,?,?,?,?)";
+        String SQL = "INSERT INTO CADASTRO_IMOVEL(TITULO_IMOVEL, ENDERECO,NUM_QUARTOS, NUM_BANHEIROS, NUM_VAGAS, VALOR_NOITE, IMAGENS, OBS, email, telefone, id_user) VALUES (?,?,?,?,?,?,?,?,?,?, ?)";
 
         try {
 
@@ -30,6 +30,8 @@ public class CadastroImovelDao {
             preparedStatement.setString(8,imovel.getObs());
             preparedStatement.setString(9,imovel.getEmail());
             preparedStatement.setString(10,imovel.getTelefone());
+            preparedStatement.setString(11,imovel.getIdUser());
+
 
             preparedStatement.execute();
 
@@ -74,8 +76,9 @@ public class CadastroImovelDao {
                 String obs = resultSet.getNString("OBS");
                 String email = resultSet.getNString("email");
                 String telefone = resultSet.getNString("telefone");
+                String idUser = resultSet.getNString("id_user");
 
-                CadastroImovel i = new CadastroImovel(idCadastroImovel,tituloImovel, endereco, numQuartos, numBanheiros, numVagas, valorNoite, imagem, obs, email,telefone);
+                CadastroImovel i = new CadastroImovel(idCadastroImovel,tituloImovel, endereco, numQuartos, numBanheiros, numVagas, valorNoite, imagem, obs,idUser, email,telefone);
 
                 imovel.add(i);
 

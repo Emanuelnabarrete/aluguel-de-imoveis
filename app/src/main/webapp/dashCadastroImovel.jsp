@@ -60,8 +60,9 @@
 
                                 <th>Acoes</th>
                             </tr>
-                            <c:forEach var="cadastro" items="${cadastroImov}">
+                            <c:if test = " idUsuario == idUser ">
                                 <tr>
+                                <c:forEach var="cadastro" items="${cadastroImov}">
                                     <td>${cadastro.idCadastroImovel}</td>
                                     <td >${cadastro.tituloImovel}</td>
                                     <td>${cadastro.endereco}</td>
@@ -80,8 +81,8 @@
                                             <a class="btn btn-secondary" href="cadastroImovel.jsp?idCadastroImovel=${cadastro.idCadastroImovel}&name=${cadastro.tituloImovel}&endereco=${cadastro.endereco}&numquartos=${cadastro.numQuartos}&numbanheiro=${cadastro.numBanheiro}&numvagas=${cadastro.numVagas}&valornoite=${cadastro.valorNoite}&imagens=${cadastro.imagens}&Email=${cadastro.email}&telefone=${cadastro.telefone}&obs=${cadastro.obs}">Update</a>
                                         </form>
                                     </td>
+                                    </c:forEach>
                                 </tr>
-                            </c:forEach>
                         </table>
                   </div>
             </main>

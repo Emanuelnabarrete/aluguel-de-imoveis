@@ -2,6 +2,7 @@ package br.com.imoveisservlet.servelet;
 
 import br.com.imoveisservlet.dao.LoginDao;
 import br.com.imoveisservlet.model.Login;
+import br.com.imoveisservlet.model.LoginDTO;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -24,7 +25,6 @@ public class CreateLogin extends HttpServlet{
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getRequestDispatcher("Login.jsp").forward(req, resp);
 
-        processRequest(req, resp);
     }
 
     private void processRequest(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -36,16 +36,18 @@ public class CreateLogin extends HttpServlet{
 
         LoginDao loginDao = new LoginDao();
 
-        boolean acesso = loginDao.loginUser(login);
 
-        if (acesso) {
+        LoginDTO loginDTO = loginDao.loginUser(login);
+
+        if (loginDTO.isLogged()) {
             System.out.println("Login bem-sucedido para o usuário: " + email);
-
+            req.getSession().setAttribute("idUser", loginDTO.getIdentificacao());
             resp.sendRedirect(req.getContextPath() +"/HomeLogada");
 
 
         } else {
             System.out.println("Falha no login para o usuário: " + email);
+            resp.sendRedirect("/login");
         }
 
     }

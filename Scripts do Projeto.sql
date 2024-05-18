@@ -19,7 +19,9 @@ CREATE TABLE CADASTRO_IMOVEL (
 	IMAGENS varchar(255),
     OBS VARCHAR(255),
     email VARCHAR(255),
-    telefone varchar (19)
+    telefone varchar (19),
+    Id_user int FOREIGN KEY,
+    FOREIGN KEY (id_user) REFERENCES CADASTRO(ID)
 );
 
 

@@ -57,6 +57,10 @@
         <input type="file" name="imagens" id="imagens" value="${param.imagens}">
         <input type="hidden" id="idCadastroImovel" name="idCadastroImovel" value="${param.idCadastroImovel}">
 
+
+
+
+
         <button type="submit">Register</button>
     </form>
 </div>
