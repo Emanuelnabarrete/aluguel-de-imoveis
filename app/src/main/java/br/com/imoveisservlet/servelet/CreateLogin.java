@@ -43,7 +43,7 @@ public class CreateLogin extends HttpServlet{
             System.out.println("Login bem-sucedido para o usuário: " + email);
             req.getSession().setAttribute("idUser", loginDTO.getIdentificacao());
             resp.sendRedirect(req.getContextPath() +"/HomeLogada");
-
+            req.setAttribute("idUser" , loginDTO.getIdentificacao());
 
         } else {
             System.out.println("Falha no login para o usuário: " + email);

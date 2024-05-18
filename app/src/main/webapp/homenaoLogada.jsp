@@ -20,6 +20,9 @@
              position: relative;
 
         }
+        h1 {
+            text-align: center;
+        }
 
         .popup {
           display: none; /* Oculta o pop-up por padrão */
@@ -70,7 +73,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#footer">Sobre nos</a>
+                        <a class="nav-link" href="#footer"><strong>Sobre nos</strong></a>
                     </li>
 
                 </ul>
@@ -101,7 +104,7 @@
       <div class="col-md-3 mb-4">
           <div class="card" style="width: 15rem;">
               <div class="card-body text-center">
-                  <img src="${imovel.imagens}" class="card-img-top" alt="...">
+                  <img src="/img/${imovel.imagens}" class="card-img-top" alt="...">
                   <h5 class="card-title">${imovel.tituloImovel}</h5>
                   <p class="card-text">R$ ${imovel.valorNoite}</p>
                   <!-- Botão com a cor personalizada -->
@@ -156,7 +159,7 @@
 
  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
     2024 Copyright: Real State
-   <a class="text-body" href="/homenaoLogada">Real.State</a>
+   <a class="text-body" href="/HomeNaoLogada">Real.State</a>
  </div>
 
 </footer>

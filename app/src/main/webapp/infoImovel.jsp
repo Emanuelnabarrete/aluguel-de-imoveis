@@ -72,8 +72,10 @@
                     </thead>
                     <tbody class="table-group-divider">
                         <tr>
-                            <td>${imovel.email}</td>
-                            <td>${imovel.telefone}</td>
+                            <td><a href="https://workspace.google.com/intl/pt-BR/lp/gmail/?utm_source=bing&utm_medium=cpc&utm_campaign=latam-br-all-pt-dr-bkws-all--all-trial-p-dr-1707806-LUAC0019581&utm_content=text-ad-none-any-DEV_c-CRE_-ADGP_Hybrid+%7C+BKWS+-+PHR+%7C+Txt-Gmail-KWID_43700073768847968-kwd-78065721889509:loc-20&utm_term=KW_g%20mail-ST_g+mail&gclid=e1341fe836c31f0368cf79a11958c212&gclsrc=3p.ds">${imovel.email}</a></td>
+
+                            <td><a href="https://web.whatsapp.com">${imovel.telefone}</a></td>
+
                         </tr>
                     </tbody>
                 </c:forEach>

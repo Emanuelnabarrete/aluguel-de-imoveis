@@ -15,6 +15,9 @@
             align-items: center;
             position: relative;
         }
+         h1 {
+                    text-align: center;
+                }
     </style>
     <meta charset="UTF-8">
     <title>Cadastro</title>
@@ -30,10 +33,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#footer">Sobre nos</a>
+                        <a class="nav-link" href="#footer"><strong>Sobre nos</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/cadastroImovel">Anunciar</a>
+                        <a class="nav-link" href="/cadastroImovel"><strong>Anunciar</strong></a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
