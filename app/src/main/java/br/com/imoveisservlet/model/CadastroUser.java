@@ -2,6 +2,8 @@ package br.com.imoveisservlet.model;
 
 public class CadastroUser {
 
+    private String id;
+
     private String nomeCompleto;
     private String cpf;
 
@@ -21,6 +23,10 @@ public class CadastroUser {
         this.email = email;
         this.senha = senha;
         this.repeteSenha = repeteSenha;
+    }
+
+    public CadastroUser(String id) {
+        this.id =  id;
     }
 
     public String getNomeCompleto() {
@@ -46,4 +52,12 @@ public class CadastroUser {
     public String getRepeteSenha() {
         return repeteSenha;
     }
+
+    public String getId() {
+        return id;
+    }
 }
+
+
+
+

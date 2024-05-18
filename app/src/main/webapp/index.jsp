@@ -5,18 +5,14 @@
     <meta charset="UTF-8">
     <title>Cadastro</title>
     <link rel="stylesheet" href="./Styles/Cadastro/cadastro.css">
-    <link rel="stylesheet" href="./Styles/footer.css">
 </head>
 <body>
 
-<header>
-    <a href="/home"><img src="./Imagens/exit.png"></a>
 
-</header>
 
 <div class="containerCadastro">
 
-    <div class="formCadastro">
+
 
         <h2>Cadastro Usuario</h2>
 
@@ -24,7 +20,8 @@
         <form action= "/cadastrouser" method= "post">
 
 
-            <label>Nome Completo</label>
+
+            <label>Nome</label>
             <input type="Text" name="nomeCompleto-cadastro" id="nomeCompleto-cadastro">
 
             <br>
@@ -32,22 +29,17 @@
             <label>E-mail</label>
             <input type="Text" name="email-cadastro" id="email-cadastro">
 
-            <br>
 
+            <br>
             <label>Cpf</label>
             <input type="Text" name="cpf-cadastro" id="cpf-cadastro">
 
-
             <br>
-
             <label>Telefone</label>
             <input type="Text" name="telefone-cadastro" id="telefone-cadastro">
-
             <br>
-
             <label>Senha</label>
             <input type="password" name="senha-cadastro" id="senha-cadastro">
-
 
             <br>
 
@@ -60,33 +52,14 @@
 
 
 
-
-            <footer class="footer">
-
-                <div class="container-footer">
-                    <div class="row">
-
-                        <div class="footer-col">
-                            <h4>Contact</h4>
-
-                        </div>
-
-                        <div class="footer-col">
-                            <h4>Social networks</h4>
-                            <div class="social-links">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </footer>
-
-
-
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </form>
-
     </div>
-</div>
 </body>
 </html>

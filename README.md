@@ -12,11 +12,14 @@ Esse projeto esta sendo feito para Projeto Integrador do terceiro semestre de TA
 
 ## Modelo Logico - DER
 
-![image](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/118950513/6778ea70-b53a-4559-b675-40272ff727b1)
+![MODELO DER](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/157494127/5c6ff856-e5c8-4ca0-846d-735b010d704e)
+
 
 ## Modelo Conceitual - MER
 
-![image](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/118950513/340df3eb-1c1b-4418-8360-98c03c44b5c6)
+![MODELO MER](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/157494127/ab57df77-6f45-4c1e-9900-acf7d960e0a4)
+
+
 
 ## Prototipos do site - 
 

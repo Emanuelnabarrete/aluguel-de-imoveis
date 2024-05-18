@@ -1,11 +1,12 @@
 package br.com.imoveisservlet.dao;
 import br.com.imoveisservlet.model.Login;
+import br.com.imoveisservlet.model.LoginDTO;
 
 import java.sql.*;
 
 public class LoginDao {
 
-    public boolean loginUser(Login login) {
+    public LoginDTO loginUser(Login login) {
         String SQL = "SELECT * FROM CADASTRO WHERE EMAIL = ? AND SENHA = ?";
 
         try{
@@ -20,13 +21,19 @@ public class LoginDao {
 
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
                 boolean acesso = resultSet.next();
+
+               String idUser =  resultSet.getString("ID");
+                LoginDTO loginDTO = new LoginDTO(acesso, idUser);
+
                 System.out.println("Login bem-sucedido: " + acesso);
-                return acesso;
+                return loginDTO;
             }
 
         } catch (SQLException e) {
             System.out.println("Erro no processo: " + e.getMessage());
-            return false;
+            LoginDTO loginDTO = new LoginDTO(false, "null");
+
+            return loginDTO;
         }
     }
 
