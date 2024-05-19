@@ -20,7 +20,7 @@ CREATE TABLE CADASTRO_IMOVEL (
     OBS VARCHAR(255),
     email VARCHAR(255),
     telefone varchar (19),
-    Id_user int FOREIGN KEY,
+    id_user int,
     FOREIGN KEY (id_user) REFERENCES CADASTRO(ID)
 );
 

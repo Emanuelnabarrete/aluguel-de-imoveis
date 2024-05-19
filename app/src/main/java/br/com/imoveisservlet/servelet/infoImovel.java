@@ -22,7 +22,7 @@ public class infoImovel extends HttpServlet {
         CadastroImovelDao cadastroImovelDao = new CadastroImovelDao();
         String id= req.getParameter("id");
 
-        CadastroImovel imovelbyID = cadastroImovelDao.findImovelbyID(id);
+        CadastroImovel imovelbyID = cadastroImovelDao.findImovelbyIDInfo(id);
 
         req.setAttribute("imovel" , imovelbyID);
 

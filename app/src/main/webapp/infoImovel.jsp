@@ -34,22 +34,20 @@
 
                 <div class="containerIMG-table">
                         <div class="containerIMG">
-                            <img src="/img/${imovel.imagens}" class="card-img-top" alt="...">
+                 <img src="/img/${imovel.imagens}" class="card-img-top" alt="...">
                         </div>
 
                     <thead>
                         <tr>
-                            <th align="center">Id</th>
+
                             <th align="center">Imovel</th>
                             <th align="center">endereco</th>
                             <th align="center">Quartos</th>
                             <th align="center">Banheiros</th>
                             <th align="center">Vagas</th>
                             <th align="center">Valor</th>
-                            <th align="center">Imagens</th>
                             <th align="center">Observacoes</th>
-                            <th align="center">Email</th>
-                            <th align="center">Telefone</th>
+
 
                         </tr>
                     </thead>
@@ -61,11 +59,7 @@
                             <td align="center">${imovel.numBanheiro}</td>
                             <td align="center">${imovel.numVagas}</td>
                             <td align="center">${imovel.valorNoite}</td>
-                            <td align="center">${imovel.imagens}</td>
                             <td align="center">${imovel.obs}</td>
-                            <td align="center">${imovel.idUser}</td>
-                            <td align="center">${imovel.email}</td>
-                            <td align="center">${imovel.telefone}</td>
 
                         </tr>
                     </body>

@@ -35,6 +35,19 @@ public class CadastroImovel {
         this.telefone = telefone;
     }
 
+    public CadastroImovel(String tituloImovel, String endereco, String numQuartos, String numBanheiro, String numVagas, String valorNoite, String obs, String email, String telefone, String imagens) {
+        this.tituloImovel = tituloImovel;
+        this.endereco = endereco;
+        this.numQuartos = numQuartos;
+        this.numBanheiro = numBanheiro;
+        this.numVagas = numVagas;
+        this.valorNoite = valorNoite;
+        this.obs = obs;
+        this.email = email;
+        this.telefone = telefone;
+        this.imagens = imagens;
+    }
+
     public CadastroImovel(String idCadastroImovel, String tituloImovel, String endereco, String numQuartos, String numBanheiro, String numVagas, String valorNoite, String imagens, String obs, String idUser, String email, String telefone) {
         this.idCadastroImovel = idCadastroImovel;
         this.tituloImovel = tituloImovel;
