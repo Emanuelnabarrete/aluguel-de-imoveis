@@ -23,10 +23,7 @@
     </nav>
     </header>
 
-    <div class="containerIMG-table">
-        <div class="containerIMG">
-            <img src="/img/${imovel.imagens}" class="card-img-top" alt="...">
-        </div>
+
 
         <br>
         <br>
@@ -34,28 +31,44 @@
         <div class="container-table">
             <table class="table-informacoes">
                 <c:forEach var="imovel" items="${imovel}">
+
+                <div class="containerIMG-table">
+                        <div class="containerIMG">
+                            <img src="/img/${imovel.imagens}" class="card-img-top" alt="...">
+                        </div>
+
                     <thead>
                         <tr>
+                            <th align="center">Id</th>
                             <th align="center">Imovel</th>
-                            <th align="center">Endereco</th>
+                            <th align="center">endereco</th>
                             <th align="center">Quartos</th>
                             <th align="center">Banheiros</th>
                             <th align="center">Vagas</th>
                             <th align="center">Valor</th>
+                            <th align="center">Imagens</th>
                             <th align="center">Observacoes</th>
+                            <th align="center">Email</th>
+                            <th align="center">Telefone</th>
+
                         </tr>
                     </thead>
-                    <tbody class="table-group-divider">
+                    <body class="table-group-divider">
                         <tr>
                             <td align="center">${imovel.tituloImovel}</td>
                             <td align="center">${imovel.endereco}</td>
                             <td align="center">${imovel.numQuartos}</td>
                             <td align="center">${imovel.numBanheiro}</td>
                             <td align="center">${imovel.numVagas}</td>
-                            <td align="center">R$ ${imovel.valorNoite}</td>
+                            <td align="center">${imovel.valorNoite}</td>
+                            <td align="center">${imovel.imagens}</td>
                             <td align="center">${imovel.obs}</td>
+                            <td align="center">${imovel.idUser}</td>
+                            <td align="center">${imovel.email}</td>
+                            <td align="center">${imovel.telefone}</td>
+
                         </tr>
-                    </tbody>
+                    </body>
                 </c:forEach>
             </table>
 

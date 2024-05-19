@@ -20,21 +20,20 @@ public class CadastroImovelDao {
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
-            preparedStatement.setString(1 ,imovel.getTituloImovel());
-            preparedStatement.setString(2 ,imovel.getEndereco());
-            preparedStatement.setString(3 ,imovel.getNumQuartos());
-            preparedStatement.setString(4,imovel.getNumBanheiro());
-            preparedStatement.setString(5 ,imovel.getNumVagas());
-            preparedStatement.setString(6 ,imovel.getValorNoite());
-            preparedStatement.setString(7 ,imovel.getImagens());
-            preparedStatement.setString(8,imovel.getObs());
-            preparedStatement.setString(9,imovel.getEmail());
-            preparedStatement.setString(10,imovel.getTelefone());
-            preparedStatement.setString(11,imovel.getIdUser());
+            preparedStatement.setString(1, imovel.getTituloImovel());
+            preparedStatement.setString(2, imovel.getEndereco());
+            preparedStatement.setString(3, imovel.getNumQuartos());
+            preparedStatement.setString(4, imovel.getNumBanheiro());
+            preparedStatement.setString(5, imovel.getNumVagas());
+            preparedStatement.setString(6, imovel.getValorNoite());
+            preparedStatement.setString(7, imovel.getImagens());
+            preparedStatement.setString(8, imovel.getObs());
+            preparedStatement.setString(9, imovel.getEmail());
+            preparedStatement.setString(10, imovel.getTelefone());
+            preparedStatement.setString(11, imovel.getIdUser());
 
 
             preparedStatement.execute();
-
 
 
             System.out.println("success em inserir o imovel");
@@ -78,7 +77,7 @@ public class CadastroImovelDao {
                 String telefone = resultSet.getNString("telefone");
                 String idUser = resultSet.getNString("id_user");
 
-                CadastroImovel i = new CadastroImovel(idCadastroImovel,tituloImovel, endereco, numQuartos, numBanheiros, numVagas, valorNoite, imagem, obs,idUser, email,telefone);
+                CadastroImovel i = new CadastroImovel(idCadastroImovel, tituloImovel, endereco, numQuartos, numBanheiros, numVagas, valorNoite, imagem, obs, idUser, email, telefone);
 
                 imovel.add(i);
 
@@ -101,7 +100,7 @@ public class CadastroImovelDao {
     }
 
     //-----------------------------------------------------------------------------------------------------------------------------------------------------------------
-    public void deleteCadastroImovelById(String CadastroImovelId ){
+    public void deleteCadastroImovelById(String CadastroImovelId) {
         String SQL = "DELETE FROM CADASTRO_IMOVEL WHERE ID_CADASTRO_IMOVEL = ?";
 
         try {
@@ -118,7 +117,7 @@ public class CadastroImovelDao {
             connection.close();
 
 
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("ERRO AO CONECTAR AO BANCO DE DADOS");
         }
     }
@@ -126,7 +125,7 @@ public class CadastroImovelDao {
 
     // -----------------------------------------------------------------------------------------------------------------------------------
 
-    public void updateCadastroImovel(CadastroImovel cad){
+    public void updateCadastroImovel(CadastroImovel cad) {
         String SQL = "UPDATE CADASTRO_IMOVEL SET TITULO_IMOVEL = ?, ENDERECO = ?, NUM_QUARTOS = ?, NUM_BANHEIROS = ?, NUM_VAGAS = ?, VALOR_NOITE = ?, IMAGENS = ?, OBS = ?, email = ?, telefone  = ? WHERE ID_CADASTRO_IMOVEL = ?";
 
         try {
@@ -156,7 +155,8 @@ public class CadastroImovelDao {
             System.out.println("Erro: " + e.getMessage());
         }
     }
-    public CadastroImovel findImovelbyID(String id){
+
+    public CadastroImovel findImovelbyID(String id) {
 
         String SQL = "SELECT * FROM CADASTRO_IMOVEL WHERE ID_CADASTRO_IMOVEL = ?";
 
@@ -184,16 +184,14 @@ public class CadastroImovelDao {
                 String email = resultSet.getNString("email");
                 String telefone = resultSet.getNString("telefone");
 
-                imovel = new CadastroImovel(idCadastroImovel,tituloImovel, endereco, numQuartos, numBanheiros, numVagas, valorNoite, imagem, obs,email,telefone);
-
-
+                imovel = new CadastroImovel(idCadastroImovel, tituloImovel, endereco, numQuartos, numBanheiros, numVagas, valorNoite, imagem, obs, email, telefone);
 
 
             }
             connection.close();
 
             return imovel;
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Erro ao consultar imovel " + e.getMessage());
             return null;
         }

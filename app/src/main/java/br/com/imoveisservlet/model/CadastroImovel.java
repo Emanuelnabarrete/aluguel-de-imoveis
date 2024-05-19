@@ -50,6 +50,8 @@ public class CadastroImovel {
         this.telefone = telefone;
     }
 
+
+
     public String getEmail() {
         return email;
     }
