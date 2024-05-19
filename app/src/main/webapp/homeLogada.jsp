@@ -18,6 +18,15 @@
          h1 {
                     text-align: center;
                 }
+
+         .user-icon {
+          width: 21px; /* Ajuste o tamanho conforme necessário */
+          height: auto; /* Mantém a proporção da imagem */
+          display: block;
+          justify-content: center;
+          align-items: center;
+          position: relative
+                        }
     </style>
     <meta charset="UTF-8">
     <title>Cadastro</title>
@@ -44,14 +53,16 @@
                         <a class="nav-link special-link" href="/painel-imovel">Dashboard Imoveis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link special-link" href="/login">Login</a>
+                        <a class="nav-link special-link" href="/login"><img src="Imagens/sombra-de-usuario-masculino.png" class="user-icon"></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
+<br>
 <h1>Grandes Oportunidades</h1>
+<br>
 <div class="row justify-content-center">
     <c:forEach var="imovel" items="${imoveis}" varStatus="loop">
         <div class="col-md-3 mb-4">
