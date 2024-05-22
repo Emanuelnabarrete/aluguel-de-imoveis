@@ -82,14 +82,18 @@ Esse projeto esta sendo feito para Projeto Integrador do terceiro semestre de TA
 - Gustavo de Sousa
 - Emanuel Nabarrete
 
-### Sobre o funcionamento do site
+## Sobre o funcionamento do site
 
 Home não logada:
 
 1 - Logo que, ao clicar, faz um reload;
+
 2 - "Sobre nós" desce até o footer do site;
+
 3 - Botões que têm a função de fazer login e cadastro;
+
 4 - Informações nos cards contendo imagem da casa, título e valor (não é possível acessar o conteúdo do card sem cadastro/login);
+
 5 - Copyright possui um link que faz um reload para a tela em que já se estava.
 
 ------------------------------------------------------------------------------------------------------
@@ -97,14 +101,18 @@ Home não logada:
 Home logada:
 
 1 - Botão "Anunciar";
+
 2 - Botão "Dashboard Imóveis" (tem o papel de fazer o controle das informações de cada imóvel; o dashboard funciona para cada usuário);
-3 - Acesso às informações do imóvel contendo título, endereço, número de quartos, número de banheiros, número de vagas, valor por noite e observações adicionais. Informações de contato contendo um link para o email (gmail.com) e WhatsApp Web (whatsapp.com);
+
+3 - Acesso às informações do imóvel contendo título, endereço, número de quartos, número de banheiros, número de vagas, valor por noite e observações adicionais. Informações de contato contendo um link para o email (gmail.com) e WhatsApp Web (whatsapp.com).
 
 ------------------------------------------------------------------------------------------------------
 Dashboard Imóveis:
 
 1 - Tem a função de controle para saber quantas casas possui;
+
 2 - Pode deletar ou alterar (alteração retorna ao cadastro do imóvel com as informações já preenchidas);
+
 3 - Botão lateral para ir até a Home (Home Logada) e botão para adicionar nova casa.
 
 
