@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Styles/Login/login.css">
-    <link rel="stylesheet" href="./Styles/footer.css">
+
 
     <title> RealState </title>
 </head>
@@ -45,35 +45,11 @@
                 </div>
 
                 <div class="input-box">
-                    <p>Não Tem Uma Conta? <a href="/cadastrouser">Criar</a></p>
+                    <p>Nao Tem Uma Conta? <a href="/cadastrouser">Criar</a></p>
                 </div>
             </form>
         </div>
     </div>
 </div>
-<footer class="footer">
-    <div class="container-footer">
-        <div class="row">
 
-            <div class="footer-col">
-                <h4>Alternative menu</h4>
-
-            </div>
-
-            <div class="footer-col">
-                <h4>Contact</h4>
-
-
-
-            </div>
-
-            <div class="footer-col">
-                <h4>Social networks</h4>
-                <div class="social-links">
-
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
 </body>

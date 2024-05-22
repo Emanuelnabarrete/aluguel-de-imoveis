@@ -144,13 +144,13 @@
      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
        <h5 class="text-uppercase"><strong>Sobre Nosso Site</strong></h5>
 
-       <p>
-         Somos uma plataforma dedicada a conectar proprietarios de imoveis com pessoas em busca de lugares incriveis para viver suas experiencias unicas. Com uma vasta gama de opcoes, desde apartamentos acolhedores ate casas luxuosas a beira-mar, estamos aqui para ajudá-lo a encontrar o lar perfeito para suas necessidades.
+        <p>
+                                              Somos uma plataforma dedicada a conectar proprietarios de imoveis com pessoas em busca de lugares incriveis para viver suas experiencias unicas. Com uma vasta gama de opcoes, desde apartamentos acolhedores ate casas luxuosas a beira-mar, estamos aqui para ajuda-lo a encontrar o lar perfeito para suas necessidades.
 
-         Navegue pelo nosso site para descobrir uma variedade de opcoes de aluguel, explore os detalhes de cada propriedade e encontre aquela que se encaixa perfeitamente no seu estilo de vida. Com um processo simples e seguro, estamos comprometidos em tornar a busca e a reserva do seu proximo lar uma experiencia tranquila e satisfatoria.
+                                              Navegue pelo nosso site para descobrir uma variedade de opcoes de aluguel, explore os detalhes de cada propriedade e encontre aquela que se encaixa perfeitamente no seu estilo de vida. Com um processo simples e seguro, estamos comprometidos em tornar a busca e a reserva do seu proximo lar uma experiencia tranquila e satisfatoria.
 
-         No Real State, acreditamos que cada pessoa merece encontrar um lugar que possa chamar de lar, e estamos aqui para tornar esse sonho uma realidade. Comece sua jornada conosco hoje e encontre o espaco que voce sempre sonhou!
-       </p>
+                                              No Real State, acreditamos que cada pessoa merece encontrar um lugar que possa chamar de lar, e estamos aqui para tornar esse sonho uma realidade. Comece sua jornada conosco hoje e encontre o espaco que voce sempre sonhou!
+                          </p>
      </div>
 
    </div>
