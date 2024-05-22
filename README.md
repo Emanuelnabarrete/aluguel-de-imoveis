@@ -12,12 +12,13 @@ Esse projeto esta sendo feito para Projeto Integrador do terceiro semestre de TA
 
 ## Modelo Logico - DER
 
-![MODELO DER](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/157494127/5c6ff856-e5c8-4ca0-846d-735b010d704e)
+![MODELO DER](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/157494127/54c51cb2-2ed1-4d69-8193-91ec81d6c06a)
+
 
 
 ## Modelo Conceitual - MER
 
-![MODELO MER](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/157494127/ab57df77-6f45-4c1e-9900-acf7d960e0a4)
+![MODELO MER](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/157494127/466abd63-2bc4-47cf-863c-3993b6380bc3)
 
 
 
@@ -25,27 +26,32 @@ Esse projeto esta sendo feito para Projeto Integrador do terceiro semestre de TA
 
 #### Cadastro - 
 
-![image](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/118950513/0b4640b4-ea27-40bc-96ce-b2ac0fbb0391)
+![Prototipo Cadastro User](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/157494127/0f0eeefc-5237-4434-91c6-0a1016b7f1c9)
+
 
 #### Login - 
-![image](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/118950513/c28d25c0-ba10-44c7-a18b-ca864e4077f5)
+
+![Prototipo Login](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/157494127/2fb37159-ec00-4b48-858a-0c617f44b9d8)
+
 
 #### Tela nao Logada - 
 
-![image](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/118950513/8ddc4bac-6c2c-4386-8b0b-730de27b407f)
+![Prototipo Home Nao Logada](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/157494127/b7bdc62b-b915-439d-8817-06a1189775d4)
+
 
 #### Tela Logada - 
 
-![image](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/118950513/b2531cfe-a2d6-40f2-be74-17b88229e46a)
+![Prototipo Home Logada](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/157494127/3f25fa73-3dd6-4a21-8929-fd691cbcf53d)
+
 
 #### Tela do Imovel - 
 
-![image](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/118950513/e87e52f0-cde0-44ed-a20c-28c754b4560c)
+![Prototipo InfoImovel](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/157494127/081a42e1-497d-4531-8581-3f4940dabfdd)
 
 
 #### Cadastro do Imovel - 
 
-![image](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/118950513/2071ea30-fbb4-4085-84db-b08cfe7536ae)
+![Prototipo Cadastro Imovel](https://github.com/Emanuelnabarrete/aluguel-de-imoveis/assets/157494127/ff341216-afe7-466b-b479-f89c9007f44a)
 
 
 
@@ -75,6 +81,32 @@ Esse projeto esta sendo feito para Projeto Integrador do terceiro semestre de TA
 - Leandro Marques
 - Gustavo de Sousa
 - Emanuel Nabarrete
+
+### Sobre o funcionamento do site
+
+Home não logada:
+
+1 - Logo que, ao clicar, faz um reload;
+2 - "Sobre nós" desce até o footer do site;
+3 - Botões que têm a função de fazer login e cadastro;
+4 - Informações nos cards contendo imagem da casa, título e valor (não é possível acessar o conteúdo do card sem cadastro/login);
+5 - Copyright possui um link que faz um reload para a tela em que já se estava.
+
+------------------------------------------------------------------------------------------------------
+
+Home logada:
+
+1 - Botão "Anunciar";
+2 - Botão "Dashboard Imóveis" (tem o papel de fazer o controle das informações de cada imóvel; o dashboard funciona para cada usuário);
+3 - Acesso às informações do imóvel contendo título, endereço, número de quartos, número de banheiros, número de vagas, valor por noite e observações adicionais. Informações de contato contendo um link para o email (gmail.com) e WhatsApp Web (whatsapp.com);
+
+------------------------------------------------------------------------------------------------------
+Dashboard Imóveis:
+
+1 - Tem a função de controle para saber quantas casas possui;
+2 - Pode deletar ou alterar (alteração retorna ao cadastro do imóvel com as informações já preenchidas);
+3 - Botão lateral para ir até a Home (Home Logada) e botão para adicionar nova casa.
+
 
 
 
