@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="./Styles/Home/home.css">
     <style>
         .navbar{
-            background-image: url('./Imagens/praia.jpg');
+            background-image: url('./Imagens/maresias.jpg');
             background-size: cover;
-            background-position: top;
+            background-position: center 25%;
             height: 90vh;
             display: block;
             justify-content: center;

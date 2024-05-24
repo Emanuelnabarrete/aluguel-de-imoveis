@@ -9,7 +9,7 @@
 
 
         .navbar{
-         background-image: url('./Imagens/praia.jpg');
+         background-image: url('./Imagens/maresias.jpg');
 
              background-size: cover;
              background-position: top;

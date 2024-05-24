@@ -33,7 +33,7 @@
         							<a class="nav-link" aria-current="page" href="/HomeLogada"><span data-feather="home" class="align-text-bottom"></span> Home </a>
         						</li>
         						<li class="nav-item">
-        							<a class="nav-link" href="/cadastroImovel"><span data-feather="file-text" class="align-text-bottom"></span> Nova Casa</a>
+        							<a class="nav-link" href="/cadastroImovel"><span data-feather="file-text" class="align-text-bottom"></span> Nova Casa + </a>
         						</li>
         					</ul>
 
@@ -77,8 +77,8 @@
                                     <td>
                                         <form action="/delete-cadastroImovel" method="post">
                                             <input type="hidden" id="id" name="id" value="${cadastro.idCadastroImovel}">
-                                            <button type="submit" class="btn btn-primary">Delete</button>
-                                            <a class="btn btn-secondary" href="cadastroImovel.jsp?idCadastroImovel=${cadastro.idCadastroImovel}&name=${cadastro.tituloImovel}&endereco=${cadastro.endereco}&numquartos=${cadastro.numQuartos}&numbanheiro=${cadastro.numBanheiro}&numvagas=${cadastro.numVagas}&valornoite=${cadastro.valorNoite}&imagens=${cadastro.imagens}&Email=${cadastro.email}&telefone=${cadastro.telefone}&obs=${cadastro.obs}">Update</a>
+                                            <button type="submit" class="btn btn-danger">Remover</button>
+                                            <a class="btn btn-secondary" href="cadastroImovel.jsp?idCadastroImovel=${cadastro.idCadastroImovel}&name=${cadastro.tituloImovel}&endereco=${cadastro.endereco}&numquartos=${cadastro.numQuartos}&numbanheiro=${cadastro.numBanheiro}&numvagas=${cadastro.numVagas}&valornoite=${cadastro.valorNoite}&imagens=${cadastro.imagens}&Email=${cadastro.email}&telefone=${cadastro.telefone}&obs=${cadastro.obs}">Alterar</a>
                                         </form>
                                     </td>
                                 </tr>
